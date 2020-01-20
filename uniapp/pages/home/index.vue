@@ -1,234 +1,92 @@
 <template>
 	<view>
-		<cu-custom bgColor="bg-gradual-blue"><block slot="content">ZigBee 养鱼</block></cu-custom>
-		<scroll-view scroll-x class="bg-white nav text-center fixed" :style="[{top:CustomBar + 'px'}]">
-			<view class="cu-item" :class="index==TabCur?'text-blue cur':''" v-for="(item,index) in tabNav" :key="index" @tap="tabSelect"
-			 :data-id="index">
-				{{tabNav[index]}}
-			</view>
-		</scroll-view>
-		<block v-if="TabCur==0">
-			<view class="cu-bar bg-white solid-bottom margin-top">
-				<view class="action">
-					<text class="cuIcon-title text-blue"></text>固定尺寸
-				</view>
-			</view>
-			<view class="padding bg-white">
-				<view class="flex flex-wrap">
-					<view class="basis-xs bg-grey margin-xs padding-sm radius">xs(20%)</view>
-					<view class="basis-df"></view>
-					<view class="basis-sm bg-grey margin-xs padding-sm radius">sm(40%)</view>
-					<view class="basis-df"></view>
-					<view class="basis-df bg-grey margin-xs padding-sm radius">sub(50%)</view>
-					<view class="basis-lg bg-grey margin-xs padding-sm radius">lg(60%)</view>
-					<view class="basis-xl bg-grey margin-xs padding-sm radius">xl(80%)</view>
-				</view>
-			</view>
-			<view class="cu-bar bg-white  margin-top solid-bottom">
-				<view class="action">
-					<text class="cuIcon-title text-blue"></text>比例布局
-				</view>
-			</view>
-			<view class="padding bg-white">
-				<view class="flex">
-					<view class="flex-sub bg-grey padding-sm margin-xs radius">1</view>
-					<view class="flex-sub bg-grey padding-sm margin-xs radius">1</view>
-				</view>
-				<view class="flex  p-xs margin-bottom-sm mb-sm">
-					<view class="flex-sub bg-grey padding-sm margin-xs radius">1</view>
-					<view class="flex-twice bg-grey padding-sm margin-xs radius">2</view>
-				</view>
-				<view class="flex  p-xs margin-bottom-sm mb-sm">
-					<view class="flex-sub bg-grey padding-sm margin-xs radius">1</view>
-					<view class="flex-twice bg-grey padding-sm margin-xs radius">2</view>
-					<view class="flex-treble bg-grey padding-sm margin-xs radius">3</view>
-				</view>
-			</view>
-			<view class="cu-bar bg-white  margin-top solid-bottom">
-				<view class="action">
-					<text class="cuIcon-title text-blue"></text>水平对齐(justify)
-				</view>
-			</view>
-			<view class="bg-white">
-				<view class="flex solid-bottom padding justify-start">
-					<view class="bg-grey padding-sm margin-xs radius">start</view>
-					<view class="bg-grey padding-sm margin-xs radius">start</view>
-				</view>
-				<view class="flex solid-bottom padding justify-end">
-					<view class="bg-grey padding-sm margin-xs radius">end</view>
-					<view class="bg-grey padding-sm margin-xs radius">end</view>
-				</view>
-				<view class="flex solid-bottom padding justify-center">
-					<view class="bg-grey padding-sm margin-xs radius">center</view>
-					<view class="bg-grey padding-sm margin-xs radius">center</view>
-				</view>
-				<view class="flex solid-bottom padding justify-between">
-					<view class="bg-grey padding-sm margin-xs radius">between</view>
-					<view class="bg-grey padding-sm margin-xs radius">between</view>
-				</view>
-				<view class="flex solid-bottom padding justify-around">
-					<view class="bg-grey padding-sm margin-xs radius">around</view>
-					<view class="bg-grey padding-sm margin-xs radius">around</view>
-				</view>
-			</view>
-			<view class="cu-bar bg-white  margin-top solid-bottom">
-				<view class="action">
-					<text class="cuIcon-title text-blue"></text>垂直对齐(align)
-				</view>
-			</view>
-			<view class="bg-white">
-				<view class="flex solid-bottom padding align-start">
-					<view class="bg-grey padding-lg margin-xs radius">ColorUi</view>
-					<view class="bg-grey padding-sm margin-xs radius">start</view>
-				</view>
-				<view class="flex solid-bottom padding align-end">
-					<view class="bg-grey padding-lg margin-xs radius">ColorUi</view>
-					<view class="bg-grey padding-sm margin-xs radius">end</view>
-				</view>
-				<view class="flex solid-bottom padding align-center">
-					<view class="bg-grey padding-lg margin-xs radius">ColorUi</view>
-					<view class="bg-grey padding-sm margin-xs radius">center</view>
-				</view>
-			</view>
-		</block>
-		<block v-if="TabCur==1">
-			<view class="cu-bar bg-white  margin-top solid-bottom">
-				<view class="action">
-					<text class="cuIcon-title text-blue"></text>等分列
-				</view>
-				<view class="action"></view>
-			</view>
-			<view class="bg-white padding">
-				<view class="grid margin-bottom text-center" v-for="(item,index) in 5" :key="index" :class="'col-' + (index+1)">
-					<view class="padding" :class="indexs%2==0?'bg-cyan':'bg-blue'" v-for="(item,indexs) in (index+1)*2" :key="indexs">{{indexs+1}}</view>
-				</view>
-			</view>
-			<view class="cu-bar bg-white  margin-top solid-bottom">
-				<view class="action">
-					<text class="cuIcon-title text-blue"></text>等高
-				</view>
-				<view class="action"></view>
-			</view>
-			<view class="bg-white padding">
-				<view class="grid col-4 grid-square">
-					<view class="bg-img" v-for="(item,index) in avatar" :key="index" :style="[{ backgroundImage:'url(' + avatar[index] + ')' }]"></view>
-				</view>
-			</view>
-		</block>
-		<block v-if="TabCur==2">
-			<view class="cu-bar bg-white margin-top solid-bottom">
-				<view class="action">
-					<text class="cuIcon-title text-blue"></text>浮动
-				</view>
-			</view>
-			<view class="bg-white padding">
-				<view class=" cf padding-sm">
-					<view class="bg-grey radius fl padding-sm">ColorUi fl</view>
-					<view class="bg-grey radius fr padding-sm">ColorUi fr</view>
-				</view>
-			</view>
-			<view class="cu-bar bg-white  solid-bottom margin-top solid-bottom">
-				<view class="action">
-					<text class="cuIcon-title text-blue"></text>内外边距
-				</view>
-			</view>
-			<view class="bg-white">
-				<view class="padding bg-gray">{size}的尺寸有xs/sm/df/lg/xl</view>
-				<view class="flex flex-wrap padding solid-top">
-					<view class="basis-df padding-bottom-xs">外边距</view>
-					<view class="basis-df padding-bottom-xs">内边距</view>
-					<view class="basis-df">.margin-{size}</view>
-					<view class="basis-df">.padding-{size}</view>
-				</view>
-				<view class="flex flex-wrap padding solid-top">
-					<view class="basis-df padding-bottom-xs">水平方向外边距</view>
-					<view class="basis-df padding-bottom-xs">水平方向内边距</view>
-					<view class="basis-df">.margin-lr-{size}</view>
-					<view class="basis-df">.padding-lr-{size}</view>
-				</view>
-				<view class="flex flex-wrap padding solid-top">
-					<view class="basis-df padding-bottom-xs">垂直方向外边距</view>
-					<view class="basis-df padding-bottom-xs">垂直方向内边距</view>
-					<view class="basis-df">.margin-tb-{size}</view>
-					<view class="basis-df">.padding-tb-{size}</view>
-				</view>
-				<view class="flex flex-wrap padding solid-top">
-					<view class="basis-df padding-bottom-xs">上外边距</view>
-					<view class="basis-df padding-bottom-xs">上内边距</view>
-					<view class="basis-df">.margin-top-{size}</view>
-					<view class="basis-df">.padding-top-{size}</view>
-				</view>
-				<view class="flex flex-wrap padding solid-top">
-					<view class="basis-df padding-bottom-xs">右外边距</view>
-					<view class="basis-df padding-bottom-xs">右内边距</view>
-					<view class="basis-df">.margin-right-{size}</view>
-					<view class="basis-df">.padding-right-{size}</view>
-				</view>
-				<view class="flex flex-wrap padding solid-top">
-					<view class="basis-df padding-bottom-xs">下外边距</view>
-					<view class="basis-df padding-bottom-xs">下内边距</view>
-					<view class="basis-df">margin-bottom-{size}</view>
-					<view class="basis-df">.padding-bottom-{size}</view>
-				</view>
-				<view class="flex flex-wrap padding solid-top">
-					<view class="basis-df padding-bottom-xs">左外边距</view>
-					<view class="basis-df padding-bottom-xs">左内边距</view>
-					<view class="basis-df">.margin-left-{size}</view>
-					<view class="basis-df">.padding-left-{size}</view>
-				</view>
-			</view>
-		</block>
-		<basics v-if="PageCur=='basics'"></basics>
-		<components v-if="PageCur=='component'"></components>
-		<plugin v-if="PageCur=='plugin'"></plugin>
-		<view class="cu-bar tabbar bg-white shadow foot">
-			<view class="action" @click="NavChange" data-cur="basics">
-				<view class='cuIcon-cu-image'>
-					<image :src="'/static/tabbar/basics' + [PageCur=='basics'?'_cur':''] + '.png'"></image>
-				</view>
-				<view :class="PageCur=='basics'?'text-green':'text-gray'">元素</view>
-			</view>
-			<view class="action" @click="NavChange" data-cur="component">
-				<view class='cuIcon-cu-image'>
-					<image :src="'/static/tabbar/component' + [PageCur == 'component'?'_cur':''] + '.png'"></image>
-				</view>
-				<view :class="PageCur=='component'?'text-green':'text-gray'">组件</view>
-			</view>
-			<view class="action" @click="NavChange" data-cur="plugin">
-				<view class='cuIcon-cu-image'>
-					<image :src="'/static/tabbar/plugin' + [PageCur == 'plugin'?'_cur':''] + '.png'"></image>
-				</view>
-				<view :class="PageCur=='plugin'?'text-green':'text-gray'">扩展</view>
-			</view>
-		</view>
+		<uni-swiper-dot :info="info" :current="current" field="content" mode="nav" >
+			<swiper class="swiper-box" @change="change">
+				<swiper-item v-for="(item ,index) in info" :key="index">
+						<image :src="item.images" class="swiper-item"></image>
+				</swiper-item>
+			</swiper>
+		</uni-swiper-dot>
+		<uni-notice-bar show-icon="true" scrollable="true" single="true" :text="notice" speed=50>
+		</uni-notice-bar>
+		<uni-grid :options="options" column-num="4">
+		</uni-grid>
 	</view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				CustomBar: this.CustomBar,
-				TabCur: 0,
-				avatar:['https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big25002.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'],
-				tabNav: ['Flex布局', 'Grid布局', '辅助布局'],
-				PageCur:'basics'
-			};
-		},
-		methods: {
-			tabSelect(e) {
-				this.TabCur = e.currentTarget.dataset.id;
-				this.scrollLeft = (e.currentTarget.dataset.id - 1) * 60
-			},
-			NavChange:function(e){
-				this.PageCur=e.currentTarget.dataset.cur
-			}
-		}
-	}
+import uniSwiperDot from "@/components/uni-ui/uni-swiper-dot/uni-swiper-dot.vue";
+import uniNoticeBar from "@/components/uni-ui/uni-notice-bar/uni-notice-bar.vue";
+import uniGrid from "@/components/uni-ui/uni-grid/uni-grid.vue";
+
+export default {
+	components: {
+		uniSwiperDot,
+		uniNoticeBar,
+		uniGrid
+	},
+	data() {
+		return {
+			info: [{
+                content: 'uCharts跨全端图表,支持H5、APP、小程序',
+				images:'/static/images/banner/banner1.png'
+            }, {
+                content: 'uCharts荣获uni-app插件大赛一等奖',
+				images:'/static/images/banner/banner2.png'
+            }],
+            current: 0,
+			notice:'uCharts跨全端图表，荣获插件大赛一等奖，感谢DCloud以及mpvue团队的鼓励和认可！感谢各位开发者的问题反馈和赞赏！',
+			options:[
+			{image:'/static/images/charts/column-group.png',text:'柱状图',url:'column/column'},
+			{image:'/static/images/charts/column-stack.png',text:'堆叠图',url:'column/stack'},
+			{image:'/static/images/charts/column-meter.png',text:'温度计',url:'column/meter'},
+			{image:'/static/images/charts/bar-group.png',text:'横屏模式',url:'column/rotate'},
+			{image:'/static/images/charts/column-scroll.png',text:'滚动条',url:'column/column-scroll'},
+      {image:'/static/images/charts/mark-line.png',text:'标记线',url:'column/mark-line'},
+			{image:'/static/images/charts/line.png',text:'折线图',url:'line/line'},
+			{image:'/static/images/charts/line-curve.png',text:'曲线图',url:'line/curve'},
+			{image:'/static/images/charts/line-scroll.png',text:'滚动条',url:'line/line-scroll'},
+			{image:'/static/images/charts/line-rotate.png',text:'横屏模式',url:'line/rotate'},
+			{image:'/static/images/charts/pie.png',text:'饼图',url:'pie/pie'},
+			{image:'/static/images/charts/ring.png',text:'圆环图',url:'pie/ring'},
+			{image:'/static/images/charts/rose.png',text:'玫瑰图',url:'pie/rose'},
+			{image:'/static/images/charts/arc-bar.png',text:'进度条',url:'arcbar/arcbar'},
+			{image:'/static/images/charts/arcbar.png',text:'进度条',url:'arcbar/mix'},
+			{image:'/static/images/charts/area2.png',text:'区域图',url:'area/area'},
+			{image:'/static/images/charts/mix.png',text:'混合图',url:'mix/mix'},
+			{image:'/static/images/charts/candle.png',text:'K线图',url:'candle/candle'},
+			{image:'/static/images/charts/gauge.png',text:'仪表盘',url:'gauge/gauge'},
+			{image:'/static/images/charts/radar.png',text:'雷达图',url:'radar/radar'},
+			{image:'/static/images/charts/cloud.png',text:'词云图',url:'word/word'},
+			{image:'/static/images/charts/funnel.png',text:'漏斗图',url:'funnel/funnel'},
+			{image:'/static/images/charts/map.png',text:'地图',url:'map/map'},
+			{image:'/static/images/charts/area.png',text:'时间轴',url:'area/time'}]
+		};
+	},
+  onShow() {
+    //#ifdef MP-BAIDU
+      swan.setPageInfo({
+                  title: 'xx 系统',
+                  keywords: 'H5图表,APP图表,小程序图表',
+                  description: 'uCharts高性能跨平台图表库支持H5图表、APP图表、小程序图表，调用简单方便、性能及体验极佳。',
+                  success: function () {
+                      console.log('setPageInfo success');
+                  },
+                  fail: function (err) {
+                      console.log('setPageInfo fail', err);
+                  }
+              })
+    //#endif
+  },
+	methods: {
+        change(e) {
+            this.current = e.detail.current;
+        }
+    }
+};
 </script>
 
 <style>
-	page {
-		padding-top: 45px;
-	}
+.swiper-box{width: 750upx;height: 400upx;}
+.swiper-item{width: 750upx;height: 400upx;}
 </style>

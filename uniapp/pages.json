@@ -1,130 +1,335 @@
 {
 	"pages": [
-		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/home/index",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "跨全端图表",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/index/index",
-			"style": {}
+			"path": "pages/monitor/index",
+			"style": {
+				"navigationBarTitleText": "跨全端图表",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/layout",
-			"style": {}
+			"path": "pages/census/index",
+			"style": {
+				"navigationBarTitleText": "跨全端图表",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/background",
-			"style": {}
+			"path": "pages/manage/index",
+			"style": {
+				"navigationBarTitleText": "跨全端图表",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/text",
-			"style": {}
+			"path": "pages/app/index",
+			"style": {
+				"navigationBarTitleText": "应用",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/icon",
-			"style": {}
+			"path": "pages/doc/index",
+			"style": {
+				"navigationBarTitleText": "手册",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/button",
-			"style": {}
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/design",
-			"style": {}
+			"path": "pages/basic/column/column",
+			"style": {
+				"navigationBarTitleText": "基本柱状图",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/tag",
-			"style": {}
+			"path": "pages/basic/column/meter",
+			"style": {
+				"navigationBarTitleText": "温度计式图表",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/avatar",
-			"style": {}
+			"path": "pages/basic/column/stack",
+			"style": {
+				"navigationBarTitleText": "堆叠图",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/progress",
-			"style": {}
+			"path": "pages/basic/mix/mix",
+			"style": {
+				"navigationBarTitleText": "混合图",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/shadow",
-			"style": {}
+			"path": "pages/basic/line/rotate",
+			"style": {
+				"navigationBarTitleText": "横屏模式带滚动条",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/basics/loading",
-			"style": {}
+			"path": "pages/basic/column/rotate",
+			"style": {
+				"navigationBarTitleText": "横屏图表",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/bar",
-			"style": {}
+			"path": "pages/basic/column/mark-line",
+			"style": {
+				"navigationBarTitleText": "标记线",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/nav",
-			"style": {}
+			"path": "pages/basic/candle/candle",
+			"style": {
+				"navigationBarTitleText": "基本K线图",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/list",
-			"style": {}
+			"path": "pages/basic/line/line",
+			"style": {
+				"navigationBarTitleText": "基本折线图",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/card",
-			"style": {}
+			"path": "pages/basic/line/line-scroll",
+			"style": {
+				"navigationBarTitleText": "折线图带滚动条",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/form",
-			"style": {}
+			"path": "pages/basic/line/curve",
+			"style": {
+				"navigationBarTitleText": "基本曲线图",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/timeline",
-			"style": {}
+			"path": "pages/basic/area/time",
+			"style": {
+				"navigationBarTitleText": "时间X轴",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/chat",
-			"style": {}
+			"path": "pages/basic/area/area",
+			"style": {
+				"navigationBarTitleText": "基本区域图",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/swiper",
-			"style": {}
+			"path": "pages/basic/pie/pie",
+			"style": {
+				"navigationBarTitleText": "基本饼图",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/modal",
-			"style": {}
+			"path": "pages/basic/pie/rose",
+			"style": {
+				"navigationBarTitleText": "玫瑰图",
+				"navigationBarTextStyle": "black"
+			}
 		},
 		{
-			"path": "pages/component/steps",
-			"style": {}
+			"path": "pages/basic/pie/ring",
+			"style": {
+				"navigationBarTitleText": "基本环形图",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/basic/gauge/gauge",
+			"style": {
+				"navigationBarTitleText": "仪表盘",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/basic/radar/radar",
+			"style": {
+				"navigationBarTitleText": "雷达图",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/basic/word/word",
+			"style": {
+				"navigationBarTitleText": "词云图",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/basic/funnel/funnel",
+			"style": {
+				"navigationBarTitleText": "漏斗图",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/basic/map/map",
+			"style": {
+				"navigationBarTitleText": "地图",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/basic/arcbar/arcbar",
+			"style": {
+				"navigationBarTitleText": "基本圆弧进度条",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/basic/arcbar/mix",
+			"style": {
+				"navigationBarTitleText": "多重圆弧进度条",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/basic/column/column-scroll",
+			"style": {
+				"navigationBarTitleText": "柱状图带滚动条",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/doc/view",
+			"style": {
+				"navigationBarTitleText": "文档详情",
+				"navigationBarTextStyle": "black"
+			}
 		}, {
-			"path": "pages/plugin/indexes",
-			"style": {}
+			"path": "pages/app/demo/component",
+			"style": {
+				"navigationBarTitleText": "(v-for)组件内使用示例",
+				"navigationBarTextStyle": "black"
+			}
 		}, {
-			"path": "pages/plugin/animation",
-			"style": {}
+			"path": "pages/app/demo/index",
+			"style": {
+				"navigationBarTitleText": "单页多图表好性能",
+				"navigationBarTextStyle": "black"
+			}
 		}, {
-			"path": "pages/plugin/drawer",
-			"style": {}
+			"path": "pages/app/demo/candle",
+			"style": {
+				"navigationBarTitleText": "K线图与柱状图联动",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/app/demo/scroll",
+			"style": {
+				"navigationBarTitleText": "scroll-view中使用",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/user/about",
+			"style": {
+				"navigationBarTitleText": "关于uCharts",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/user/feedback",
+			"style": {
+				"navigationBarTitleText": "问题反馈",
+				"navigationBarTextStyle": "black"
+			}
 		}, {
-			"path": "pages/plugin/verticalnav",
-			"style": {}
+			"path": "pages/user/service",
+			"style": {
+				"navigationBarTitleText": "服务条款及协议",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/user/account",
+			"style": {
+				"navigationBarTitleText": "帐号管理",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/user/message",
+			"style": {
+				"navigationBarTitleText": "新消息通知",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/user/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarTextStyle": "black"
+			}
 		}
 	],
 	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uCharts跨端图表",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
 		"mp-alipay": {
-			/* 支付宝小程序特有相关 */
-			"transparentTitle": "always",
-			"allowsBounceVertical": "NO"
-		},
-		"navigationBarBackgroundColor": "#0081ff",
-		"navigationBarTitleText": "ColorUi for UniApp",
-		"navigationStyle": "custom",
-		"navigationBarTextStyle": "white"
+			"titleBarColor": "#FFFFFF"
+		}
 	},
-	"usingComponts": true,
-	"condition": { //模式配置，仅开发期间生效
-		"current": 0, //当前激活的模式(list 的索引项)
+	"tabBar": {
+		"color": "#333333",
+		"backgroundColor": "#F8F8F8",
+		"selectedColor": "#00B26A",
 		"list": [{
-			"name": "表单", //模式名称
-			"path": "pages/component/form", //启动页面
-			"query": "" //启动参数
-		}]
+				"pagePath": "pages/home/index",
+				"text": "系统",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home_cur.png"
+			},
+			{
+				"pagePath": "pages/monitor/index",
+				"text": "监测",
+				"iconPath": "static/images/tabbar/monitor.png",
+				"selectedIconPath": "static/images/tabbar/monitor_cur.png"
+			},
+			{
+				"pagePath": "pages/census/index",
+				"text": "统计",
+				"iconPath": "static/images/tabbar/census.png",
+				"selectedIconPath": "static/images/tabbar/census_cur.png"
+			}
+			//#ifndef MP-TOUTIAO
+			, {
+				"pagePath": "pages/manage/index",
+				"text": "管理",
+				"iconPath": "static/images/tabbar/manage.png",
+				"selectedIconPath": "static/images/tabbar/manage_cur.png"
+			}
+			//#endif
+		]
 	}
-
 }
