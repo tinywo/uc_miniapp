@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<img src="static/images/bg.jpg" style="width: 100%;">
+		<img src="../../static/images/bg.jpg" style="width: 100%;">
 	</view>
 </template>
 

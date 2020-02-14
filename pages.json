@@ -2,28 +2,42 @@
 	"pages": [{
 			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "系统",
+				"navigationBarTitleText": "系统首页",
 				"navigationBarTextStyle": "black"
 			}
 		},
 		{
 			"path": "pages/monitor/index",
 			"style": {
-				"navigationBarTitleText": "跨全端图表",
+				"navigationBarTitleText": "系统实时监测",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/monitor/temp",
+			"style": {
+				"navigationBarTitleText": "系统温度实时监测",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/monitor/hum",
+			"style": {
+				"navigationBarTitleText": "系统湿度实时监测",
 				"navigationBarTextStyle": "black"
 			}
 		},
 		{
 			"path": "pages/census/index",
 			"style": {
-				"navigationBarTitleText": "跨全端图表",
+				"navigationBarTitleText": "系统数据统计",
 				"navigationBarTextStyle": "black"
 			}
 		},
 		{
 			"path": "pages/census/hum7day",
 			"style": {
-				"navigationBarTitleText": "近7日湿度",
+				"navigationBarTitleText": "系统操作管理",
 				"navigationBarTextStyle": "black"
 			}
 		},

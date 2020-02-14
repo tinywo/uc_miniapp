@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "系统数据统计",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "uni-card": "/components/uni-ui/uni-card/uni-card"
+  }
+}

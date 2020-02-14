@@ -1,0 +1,92 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/monitor/index",
+    "pages/monitor/temp",
+    "pages/monitor/hum",
+    "pages/census/index",
+    "pages/census/hum7day",
+    "pages/census/hum30day",
+    "pages/census/temp7day",
+    "pages/census/temp30day",
+    "pages/manage/index",
+    "pages/app/index",
+    "pages/doc/index",
+    "pages/user/index",
+    "pages/basic/column/column",
+    "pages/basic/column/meter",
+    "pages/basic/column/stack",
+    "pages/basic/mix/mix",
+    "pages/basic/line/rotate",
+    "pages/basic/column/rotate",
+    "pages/basic/column/mark-line",
+    "pages/basic/candle/candle",
+    "pages/basic/line/line",
+    "pages/basic/line/line-scroll",
+    "pages/basic/line/curve",
+    "pages/basic/area/time",
+    "pages/basic/area/area",
+    "pages/basic/pie/pie",
+    "pages/basic/pie/rose",
+    "pages/basic/pie/ring",
+    "pages/basic/gauge/gauge",
+    "pages/basic/radar/radar",
+    "pages/basic/word/word",
+    "pages/basic/funnel/funnel",
+    "pages/basic/map/map",
+    "pages/basic/arcbar/arcbar",
+    "pages/basic/arcbar/mix",
+    "pages/basic/column/column-scroll",
+    "pages/doc/view",
+    "pages/app/demo/component",
+    "pages/app/demo/index",
+    "pages/app/demo/candle",
+    "pages/app/demo/scroll",
+    "pages/user/about",
+    "pages/user/feedback",
+    "pages/user/service",
+    "pages/user/account",
+    "pages/user/message",
+    "pages/user/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uCharts跨端图表",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "backgroundColor": "#F8F8F8",
+    "selectedColor": "#00B26A",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "系统",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home_cur.png"
+      },
+      {
+        "pagePath": "pages/monitor/index",
+        "text": "监测",
+        "iconPath": "static/images/tabbar/monitor.png",
+        "selectedIconPath": "static/images/tabbar/monitor_cur.png"
+      },
+      {
+        "pagePath": "pages/census/index",
+        "text": "统计",
+        "iconPath": "static/images/tabbar/census.png",
+        "selectedIconPath": "static/images/tabbar/census_cur.png"
+      },
+      {
+        "pagePath": "pages/manage/index",
+        "text": "管理",
+        "iconPath": "static/images/tabbar/manage.png",
+        "selectedIconPath": "static/images/tabbar/manage_cur.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}
