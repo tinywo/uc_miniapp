@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "文档详情",
-  "navigationBarTextStyle": "black",
-  "usingComponents": {
-    "uni-card": "/components/uni-ui/uni-card/uni-card"
-  }
-}

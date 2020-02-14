@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "(v-for)组件内使用示例",
-  "navigationBarTextStyle": "black",
-  "usingComponents": {
-    "u-charts": "/components/u-charts/component"
-  }
-}
